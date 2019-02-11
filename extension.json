@@ -1,0 +1,19 @@
+{
+	"name": "MathRenderer",
+	"version": "1.0.0",
+	"author": "ahmadnourallah",
+	"url": "https://github.com/ahmadnourallah/MathRenderer",
+	"description": "A mediawiki extension renders latex and mml equations using mathtype",
+	"license-name": "GPL-3.0+",
+	"type": "parserhook",
+	"AutoloadClasses": {
+		"MathRenderer": "MathRenderer_body.php"
+	},
+	"callback": "MathRenderer::onRegistration",
+	"config": {
+		"MRUseMML": false,
+		"MRMathTypeService": "//www.wiris.net/demo/editor/render",
+		"MROptions": {"fontFamily": "Arial", "fontSize": 16, "color": "black", "backgroundColor": "transparent", "format": "svg"}
+	},
+	"manifest_version": 1
+}
