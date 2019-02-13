@@ -75,7 +75,7 @@ class MathRenderer {
 		global $wgMRUseMML, $wgMRMathTypeService, $wgMROptions;
 
 		if (!array_key_exists('dir', $args)) $args['dir'] = 'left';
-		if (!array_key_exists('mode', $args)) $args['mode'] = 'display';
+		if (!array_key_exists('mode', $args)) $args['mode'] = 'inline';
 
 		$src = $wgMRMathTypeService . "?";
 
